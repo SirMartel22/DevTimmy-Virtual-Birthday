@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
       <div>
       <h2>Welcome to DevTimmy Virtual Birthday Party!!!</h2>
-      <button onClick = {()=>navigate("/Giftdev")}>We are Going GiftDev Page</button>
+      <button onClick = {()=>navigate("/Pass")}> Continue </button>
       </div>
   )
 }
