@@ -26,14 +26,63 @@
                 "prize-name": "Virtual Cake Slice",
                 "description": "You won a slice of DevTimmy's Birthday Cake",
                 "imgsrc": "imagesrc",
-                "deed": "I won a Virtual Birthday Cake @DevTimmy Virtual Birthday Event"
+                "deed": "I won a Virtual Birthday Cake at DevTimmy Virtual Birthday Event"
             },
 
-             {
+            {
                 "prize-name": "Birthday Dance Challenge Winner",
                 "description": " Dance challenge Winner!",
                 "imgsrc": "imagesrc",
-                "deed": "I won a Virtual Birthday Cake @DevTimmy Virtual Birthday Event"
+                "deed": "I was the Dance Challenge Winner at DevTimmy Virtual Birthday Event"
+            },
+
+            {
+                "prize-name": "Birthday Shoutout",
+                "description": " You won a special shoutout",
+                "imgsrc": "imagesrc",
+                "deed": "I got a shoutout from DevTimmy's birthday bash"
+            },
+
+            {
+                "prize-name": "Confetti Cannon",
+                "description": " You won a virtual confetti cannon! Pop it for [Your Name]! 🎊 ",
+                "imgsrc": "imagesrc",
+                "deed": " I fired the confetti cannon for DevTimmys birthday!"
+            },
+
+            {
+                "prize-name": "Birthday Meme Star",
+                "description": " You won a spot as DevTimmy’s birthday meme star!",
+                "imgsrc": "imagesrc",
+                "deed": " I fired the confetti cannon for DevTimmy’s birthday!"
+            },
+
+            {
+                "prize-name": "Virtual Candle",
+                "description": " You won a birthday candle to light for DevTimmy!",
+                "imgsrc": "imagesrc",
+                "deed": " I lit a candle for DevTimmy’s big day!"
+            },
+
+            {
+                "prize-name": "Super Fan Badge",
+                "description": " Super Fan Badge! 🏆 ",
+                "imgsrc": "imagesrc",
+                "deed": " I’m a super fan of DevTimmy’s birthday!"
+            },
+
+            {
+                "prize-name": "Gift Box Surprise",
+                "description": " You won a virtual gift box!",
+                "imgsrc": "imagesrc",
+                "deed": " I unwrapped a surprise for DevTimmy's birthday "
+            },
+
+            {
+                "prize-name": "Birthday DJ Star",
+                "description": " You rock the Birthday with amazing songs  ",
+                "imgsrc": "imagesrc",
+                "deed": " I was the coolest DJ at DevTimmy’s birthday event! 🎶 "
             }
     ]
 }
