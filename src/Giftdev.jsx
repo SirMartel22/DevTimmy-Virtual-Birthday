@@ -8,7 +8,7 @@ const Giftdev = () => {
     <div>
       <div className="">
         <h2 className="t">Kindy pick a gift for DevTimmy</h2>
-        <button onClick = {()=> navigate("/Guide")}> Next </button>
+        <button onClick = {()=> navigate("/Spinintro")}> Next </button>
        </div>
     </div>
   )
