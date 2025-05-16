@@ -1,0 +1,39 @@
+{
+    "Card":[
+        {
+            "name": "message",
+            "description": "Write a Happy Birthday Message to DevTimmy"
+        },
+
+        {
+            "name": "audio",          
+             "description": "Sing or Drop a song for DevTimmy"
+        },
+
+        {
+            "name": "picture",
+            "description": "Drop a ThowbackPicture of Devtimmy"
+        },
+        {
+            "name": "video",
+            "description": "Drop a drop a video of devTimmy"
+        }
+
+    ],
+
+   "GiftCard": [
+            {
+                "prize-name": "Virtual Cake Slice",
+                "description": "You won a slice of DevTimmy's Birthday Cake",
+                "imgsrc": "imagesrc",
+                "deed": "I won a Virtual Birthday Cake @DevTimmy Virtual Birthday Event"
+            },
+
+             {
+                "prize-name": "Birthday Dance Challenge Winner",
+                "description": " Dance challenge Winner!",
+                "imgsrc": "imagesrc",
+                "deed": "I won a Virtual Birthday Cake @DevTimmy Virtual Birthday Event"
+            }
+    ]
+}
