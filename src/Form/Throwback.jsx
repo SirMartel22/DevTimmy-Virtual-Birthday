@@ -1,6 +1,8 @@
 import React from 'react'
+import { ImageUpload } from './ImageUpload'
 
 const Throwback = () => {
+
   return (
       <div>
           
@@ -21,11 +23,18 @@ const Throwback = () => {
                         
                         <div>
                             <label htmlFor="name">Name</label>
-                            <input placeholder="Kindly enter your name" type="text" />
+                            <input 
+                              name="name"
+                              id="name"
+                              placeholder="Kindly enter your name" 
+                              type="text" 
+                              onChange = ""
+                            />
                         </div>  
 
                         <div>
                             <label htmlFor="name">Throwback Picture Here</label>
+                            <imageUpload onImageUploaded=""/>
                             <input placeholder="Upload the Throwback picture here" type="file" accept="image/*"  id="ThrowbackUpload"/>
                         
                         </div>  
