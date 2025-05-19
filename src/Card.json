@@ -9,14 +9,14 @@
             "name": "audio",          
              "description": "Sing or Drop a song for DevTimmy"
         },
-
-        {
-            "name": "picture",
-            "description": "Drop a ThowbackPicture of Devtimmy"
-        },
+        
         {
             "name": "video",
             "description": "Drop a drop a video of devTimmy"
+        },
+        {
+            "name": "picture",
+            "description": "Drop a ThowbackPicture of Devtimmy"
         }
 
     ],

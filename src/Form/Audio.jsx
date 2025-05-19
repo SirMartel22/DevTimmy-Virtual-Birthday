@@ -11,7 +11,7 @@ const Audio = () => {
               </div>
 
               <div className="displayCard-Form">
-                  
+                   
                   <div className="image-file">
                         <img />
                   </div>
