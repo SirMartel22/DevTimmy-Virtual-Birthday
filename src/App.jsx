@@ -9,6 +9,11 @@ import Spinintro from './Spinintro'
 import Thanks from './Thanks'
 import Pass from './Pass'
 import Video from './Video'
+import Audio from './Form/Audio'
+import Message from './Form/Message'
+import Videoform from './Form/Videoform'
+import Throwback from './Form/Throwback'
+
 
 
 
@@ -28,6 +33,12 @@ const App = () => {
           <Route path='/Spinintro' element={<Spinintro />} />
           <Route path='/Thanks' element={<Thanks />} />
           <Route path='/Video' element={<Video />} />
+          <Route path='/Form/Audio' element={<Audio />} />
+          <Route path='/Form/Videoform' element={<Videoform />} />
+          <Route path='/Form/Message' element={<Message />} />
+          <Route path='/Form/Throwback' element={<Throwback />} />
+
+
 
         </Routes>
 
