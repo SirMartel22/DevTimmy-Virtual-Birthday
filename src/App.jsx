@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './App.css'
+import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Welcome from './Welcome'
 import Giftdev from './Giftdev'
@@ -37,9 +37,6 @@ const App = () => {
           <Route path='/Form/Videoform' element={<Videoform />} />
           <Route path='/Form/Message' element={<Message />} />
           <Route path='/Form/Throwback' element={<Throwback />} />
-
-
-
         </Routes>
 
       </BrowserRouter>

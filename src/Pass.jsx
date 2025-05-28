@@ -10,7 +10,7 @@ const Pass = () => {
       <div className="form">
 
         <div className ="description">
-          <h2>Kindly Provide Your Pass</h2>
+          <h2 className="font-bold text-5xl">Kindly Provide Your Pass</h2>
           <p> Please give my bouncer a gate pass so he doesn’t start flexing unnecessary power 😂</p>
         </div>
 
@@ -39,7 +39,7 @@ const Pass = () => {
           </div>
           
 
-          <button onClick ={()=>navigate('/Video')}> Continue to The Venue</button>
+          <button className="" onClick ={()=>navigate('/Video')}> Continue to The Venue</button>
 
       
     </div>
