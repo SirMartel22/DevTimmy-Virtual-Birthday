@@ -1,8 +1,10 @@
+/* @import "tailwindcss"; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color: rgba(34, 25, 25, 0.87);
-  background-color:rgb(246, 234, 234);
+  color: rgba(243, 235, 235, 0.87);
+  background-color:rgb(9, 2, 25);
 }
