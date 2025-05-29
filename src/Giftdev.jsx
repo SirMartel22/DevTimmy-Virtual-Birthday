@@ -10,7 +10,7 @@ const Giftdev = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-16">
       <div className="">
-        <h2 className="gift-dev-page font-bold text-center text-2xl lg:text-3xl">Kindy pick a gift for DevTimmy</h2>
+        <h2 className="gift-dev-page font-bold text-center text-2xl lg:text-3xl">Kindy click on one of the cards below to gift DevTimmy</h2>
       </div>
       
       <div className="gift-card-section flex flex-col gap-8 text-center">
@@ -44,7 +44,7 @@ const Giftdev = () => {
 
       </div>
 
-        <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 transition duration-300" onClick = {()=> navigate("/Spinintro")}> Next </button>
+        <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick = {()=> navigate("/Spinintro")}> Next </button>
     </div>
   )
 }

@@ -13,6 +13,7 @@ import Audio from './Form/Audio'
 import Message from './Form/Message'
 import Videoform from './Form/Videoform'
 import Throwback from './Form/Throwback'
+// import animatedBg from './assets/animated-bg.mp4'
 
 
 
@@ -22,6 +23,13 @@ const App = () => {
 
   return (
     <div>
+    {/* <div className="relative h-screen w-full overflow-hidden"> */}
+      {/* Video Background */}
+    {/* //   <video autoplay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    //     <source src={animatedBg} type="video/mp4" />
+    //       Your Browser does not support the Video tag.
+
+    //   </video> */}
       
       <BrowserRouter>
         <Routes>

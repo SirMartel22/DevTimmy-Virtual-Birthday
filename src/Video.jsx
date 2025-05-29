@@ -6,21 +6,21 @@ const Video = () => {
   return (
       <div>
           
-          <div className=" celebrant-Video">
+        <div className="celebrant-Video flex flex-col items-center justify-center">
               
-              <h2>Welcome Speech By The Celebrant</h2>
+          <h2 className="text-3xl">Hi Guys! Listen to DevTimmy Talk 🤭 </h2>
 
-        <div>
-            <video autoPlay className="">
-              <source src="" />
-              Your Browser does not support the video tag
-            </video>
-          
-        </div>
+          <div>
+              <video autoPlay className="">
+                <source src="" />
+                Your Browser does not support the video tag
+              </video>
             
-        <button onClick={()=>navigate('/Giftdev')}>Continue</button>
-              
           </div>
+            
+          <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Giftdev')}>Continue</button>
+              
+        </div>
       
 
       
