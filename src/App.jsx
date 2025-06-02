@@ -13,6 +13,7 @@ import Audio from './Form/Audio'
 import Message from './Form/Message'
 import Videoform from './Form/Videoform'
 import Throwback from './Form/Throwback'
+import Admin from './Admin/Admin'
 // import animatedBg from './assets/animated-bg.mp4'
 
 
@@ -45,6 +46,7 @@ const App = () => {
           <Route path='/Form/Videoform' element={<Videoform />} />
           <Route path='/Form/Message' element={<Message />} />
           <Route path='/Form/Throwback' element={<Throwback />} />
+          <Route path='/Admin/Admin' element={<Admin />}/>
         </Routes>
 
       </BrowserRouter>
