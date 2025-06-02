@@ -11,16 +11,6 @@ const Throwback = () => {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
 
-    // const testConnection = async () => {
-    //   try {
-    //     console.log('Testing connections...')
-    //     const { data, error } = await supabase.from('throwback_gifts').select('*')
-    //     console.log('Connection test result: ', { data, error })
-        
-    //   } catch (err) { 
-    //     console.error('Connection test failed: ', err)
-    //   }
-    // }
 
   const handleImageChange = (e) => {
     const file = e.target.files[0]
@@ -45,7 +35,7 @@ const Throwback = () => {
       console.log('About to insert:', { name, image_url: publicUrl })
       console.log("Image data recieved:", imageData);
 
-      //Step: Save to database
+      //Step 3: Save to database
     console.log('Saving to database...')
       const { data, error } = await supabase
       .from('throwback_gifts')
@@ -92,7 +82,7 @@ const Throwback = () => {
                   
             <div className="image-file flex flex-col shadow-div-shadow items-center justify-center bg-[#4E6688] py-12 px-8 space-y-8 lg:w-[400px] rounded-md transform hover:scale-105 transition duration-500">
               <img className="shadow-div-shadow-2 w-full lg:w-[50%] rounded-md" src={ cardImage } />
-              <h2 className="text-center">Hi Devtimmy 🙌 I Name is gifting you this Audio </h2>
+              <h2 className="text-center">{`Hi Devtimmy 🙌  ${name} is gifting you this Throwback `}</h2>
 
             </div>
 
@@ -133,10 +123,6 @@ const Throwback = () => {
             </div>
 
           </div>
-
-          {/* <button type="submit" onClick={testConnection} className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" >
-                 Test Connection
-          </button> */}
 
         </div>
       </div>
