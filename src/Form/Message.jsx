@@ -59,13 +59,17 @@ const Message = () => {
       <div className="displayCard-Form flex flex-col lg:flex lg:flex-row md:flex md:flex-col gap-16 justify-center items-center space-x-12">
           
           <div className="image-file flex flex-col shadow-div-shadow items-center justify-center bg-[#4E6688] py-12 px-8 space-y-8 lg:w-[400px] rounded-md transform hover:scale-105 transition duration-500">
+            {sugarMessage.trim() === '' ? (
               <img className="shadow-div-shadow-2 w-full lg:w-[50%] rounded-md" src={image} />
+            ) : (
+                <div className="text-lg w-full lg:w-[90%] rounded-mg"> {sugarMessage} </div>
+            )}  
               <h2 className="text-center">Hi Devtimmy 🙌 {name || 'Someone'} is sending you this sugar cube message </h2>
     
           </div>
 
         <div className="message-form-header">
-            <form className="space-y-4" action="" method="post" onSubmit={handleSubmit}>
+            <form className="space-y-4" onSubmit={handleSubmit}>
                 
                 <div>
                     <label className="text-1xl lg:text-2xl md:text-2xl" htmlFor="name">Name: </label>
@@ -73,7 +77,8 @@ const Message = () => {
                         className="bg-transparent w-[70%] border border-1 border-[#4E6688] rounded-md ring-0 focus:ring-2  focus:outline-none py-2 px-4"
                         placeholder="Kindly enter your name"
                         type="text"
-                        value={ name }
+                        value={name}
+                        id="name"
                         onChange={(e) => setName(e.target.value)}
                         disabled = {loading}
                       />
@@ -119,11 +124,11 @@ const Message = () => {
                       >
                         {loading ? 'Sending...' : 'Send Gift to DevTimmy'}
                       </button>
-            </form>
+                </form>
+            </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
 )
 }
 
