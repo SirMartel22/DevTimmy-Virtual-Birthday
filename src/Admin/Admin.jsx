@@ -84,7 +84,7 @@ const Admin = () => {
 
             //Convert the card to canvas
             const canvas = await html2canvas(cardElement, {
-                background: '#ffff',
+                background: '#4E6688',
                 scale: 2, //Higher quality
                 useCORS: true,//Handle cross-origin images
                 allowTaint: true
@@ -129,7 +129,7 @@ const Admin = () => {
                   <div className="grid grid-cols-1 md:grid-cols lg:grid-cols-3 gap-6">
                       {gifts.map((gift) => (
                         //   console.log(gift)
-                          <div key={gift.id} id={`card-${gift.id}`} className="bg-white rounded-lg shadow-lg p-4">
+                          <div key={gift.id} id={`card-${gift.id}`} className="bg-[#4E6688] rounded-lg shadow-lg p-4">
                               <img
                                   src={gift.image_url}
                                   alt={`Throwback from ${gift.name}`}
