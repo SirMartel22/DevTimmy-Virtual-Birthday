@@ -16,7 +16,32 @@ export const uploadFile = async (file, bucket = 'throwback-images') => {
     return data;
 }
 
+
+
 export const uploadImage = (file) => uploadFile(file, 'throwback-images');
 export const uploadAudio = (file) => uploadFile(file, 'throwback-images');
-export const uploadMessage = (file) => uploadFile(file, 'throwback-image');
+// export const uploadMessage = (file) => uploadFile(file, 'throwback-image');
 export const uploadVideo = (file) => uploadFile(file, 'throwback-images');
+
+
+//Text Message Function (new)
+export const saveTextMessage = async (name, message) => {
+    try {
+        const { data, error } = await supabase
+            .from('messages')
+            .insert([
+                {
+                    sender_name: name,
+                    content: message,
+                    created_at: new Date().toISOString()
+                }
+            ])
+            .select()
+        
+        if (error) throw error
+        return { success: true, data: data[0] }
+    } catch (error) {
+        console.error('Error saving message: ', error)
+        return { success: false, error: error.message }
+    }
+}
