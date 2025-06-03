@@ -28,11 +28,11 @@ export const uploadVideo = (file) => uploadFile(file, 'throwback-images');
 export const saveTextMessage = async (name, message) => {
     try {
         const { data, error } = await supabase
-            .from('messages')
+            .from('throwback_gifts')
             .insert([
                 {
-                    sender_name: name,
-                    content: message,
+                    name: name,
+                    message_body: message,
                     created_at: new Date().toISOString()
                 }
             ])
@@ -41,7 +41,8 @@ export const saveTextMessage = async (name, message) => {
         if (error) throw error
         return { success: true, data: data[0] }
     } catch (error) {
-        console.error('Error saving message: ', error)
-        return { success: false, error: error.message }
+        console.error('Error saving message: ', error);
+        const errorMsg = error?.message || JSON.stringify(error) || 'Unknown error'
+        return { success: false, error: errorMsg }
     }
 }

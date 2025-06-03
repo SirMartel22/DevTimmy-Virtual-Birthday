@@ -34,7 +34,7 @@ const Videoform = () => {
             console.log("Video Data Recieved: ", videoData);
 
             //step 3: Save to database
-            console.log("Saving tp database...")
+            console.log("Saving to database...")
             const { data, error } = await supabase
                 .from('throwback_gifts')
                 .insert([
