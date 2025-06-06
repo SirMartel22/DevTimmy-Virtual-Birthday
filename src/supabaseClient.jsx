@@ -17,7 +17,6 @@ export const uploadFile = async (file, bucket = 'throwback-images') => {
 }
 
 
-
 export const uploadImage = (file) => uploadFile(file, 'throwback-images');
 export const uploadAudio = (file) => uploadFile(file, 'throwback-images');
 // export const uploadMessage = (file) => uploadFile(file, 'throwback-image');

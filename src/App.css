@@ -1,1 +1,306 @@
- 
+/* li:first-child .text {
+  background-color: violet;
+}
+
+li:nth-child(2) .text {
+  background-color: blue;
+}
+
+li:nth-child(3) .text {
+  background-color: yellow;
+}
+
+li:nth-child(4) .text {
+  background-color: green;
+}
+
+li:nth-child(5) .text {
+  background-color: orange;
+}
+
+li:nth-child(6) .text {
+  background-color: #dda853;
+}
+
+li:nth-child(7) .text {
+  background-color: indigo;
+}
+
+li:nth-child(8) .text {
+  background-color: brown;
+}
+
+li:nth-child(9) .text {
+  background-color: #00809d;
+}
+
+li:nth-child(10) .text {
+  background-color: #ff8383;
+} */
+
+/* Manipulating the rotation of the lines */
+
+/* li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+
+li:nth-child(2) {
+  transform: rotate(36deg) skewY(-60deg);
+}
+
+li:nth-child(3) {
+  transform: rotate(72deg) skewY(-60deg);
+}
+
+li:nth-child(4) {
+  transform: rotate(108deg) skewY(-60deg);
+}
+
+li:nth-child(5) {
+  transform: rotate(144deg) skewY(-60deg);
+}
+
+li:nth-child(6) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+
+li:nth-child(7) {
+  transform: rotate(216deg) skewY(-60deg);
+}
+
+li:nth-child(8) {
+  transform: rotate(252deg) skewY(-60deg);
+}
+
+li:nth-child(9) {
+  transform: rotate(288deg) skewY(-60deg);
+}
+
+li:nth-child(10) {
+  transform: rotate(324deg) skewY(-60deg);
+}
+
+.circle {
+  width: 25em;
+  height: 25em;
+  border: 1px solid #fff;
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 50px solid #f5f5f5;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 1;
+}
+
+.spin-btn {
+  position: absolute;
+  left: 40%;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(72, 129, 175);
+  border-radius: 20px;
+  margin-top: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.start-rotate {
+  animation: start-rotate 1s linear infinite;
+}
+
+@keyframes start-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stop-rotate{
+    animation-play-state: paused
+}
+
+.wheel-spin-container {
+    position: relative;
+    display: inline-block;
+} */
+
+
+
+/* import React from 'react'; */
+
+// class Spin extends React.Component {
+//   state = {
+//     name: "circle",
+//     isSpinning: false
+//   }
+
+//   startRotation = () => {
+//     if (this.state.isSpinning) return; // Prevent multiple spins
+    
+//     this.setState({
+//       name: "circle start-rotate",
+//       isSpinning: true
+//     });
+
+//     // Random spin duration between 2-6 seconds
+//     const spinDuration = Math.floor(Math.random() * 4000) + 2000;
+    
+//     setTimeout(() => {
+//       this.setState({
+//         name: "circle start-rotate stop-rotate",
+//         isSpinning: false
+//       });
+//     }, spinDuration);
+//   }
+
+//   render() {
+//     return (
+//       <div style={{ textAlign: 'center', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+//         <h2 style={{ color: '#333', marginBottom: '30px' }}>
+//           Click on this spinner to Win a gift for attending DevTimmy's Birthday 
+//         </h2>
+
+//         <div style={{ position: 'relative', display: 'inline-block' }}>
+//           {/* Arrow */}
+//           <div style={{
+//             width: 0,
+//             height: 0,
+//             borderLeft: '15px solid transparent',
+//             borderRight: '15px solid transparent',
+//             borderTop: '50px solid #f5f5f5',
+//             position: 'absolute',
+//             left: '50%',
+//             top: '0',
+//             zIndex: 10,
+//             transform: 'translateX(-50%)'
+//           }}></div>
+
+//           {/* Spinner Wheel */}
+//           <ul className={this.state.name} style={{
+//             width: '25em',
+//             height: '25em',
+//             border: '1px solid #fff',
+//             position: 'relative',
+//             padding: 0,
+//             margin: '1em auto',
+//             borderRadius: '50%',
+//             listStyle: 'none',
+//             overflow: 'hidden'
+//           }}>
+//             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, index) => {
+//               const colors = ['violet', 'blue', 'yellow', 'green', 'orange', '#dda853', 'indigo', 'brown', '#00809d', '#ff8383'];
+//               const rotation = index * 36;
+              
+//               return (
+//                 <li key={num} style={{
+//                   overflow: 'hidden',
+//                   position: 'absolute',
+//                   top: 0,
+//                   right: 0,
+//                   width: '50%',
+//                   height: '50%',
+//                   transformOrigin: '0% 100%',
+//                   transform: `rotate(${rotation}deg) skewY(-60deg)`
+//                 }}>
+//                   <div style={{
+//                     position: 'absolute',
+//                     left: '-100%',
+//                     width: '200%',
+//                     height: '200%',
+//                     textAlign: 'center',
+//                     display: 'block',
+//                     transform: 'skewY(60deg) rotate(15deg)',
+//                     paddingTop: '20px',
+//                     cursor: 'pointer',
+//                     fontWeight: 'bold',
+//                     fontSize: '18px',
+//                     backgroundColor: colors[index]
+//                   }}>
+//                     {num}
+//                   </div>
+//                 </li>
+//               );
+//             })}
+//           </ul>
+
+//           {/* Spin Button */}
+//           <button 
+//             onClick={this.startRotation}
+//             disabled={this.state.isSpinning}
+//             style={{
+//               position: 'absolute',
+//               left: '50%',
+//               transform: 'translateX(-50%)',
+//               width: '120px',
+//               height: '40px',
+//               backgroundColor: this.state.isSpinning ? '#ccc' : 'rgb(72, 129, 175)',
+//               borderRadius: '20px',
+//               marginTop: '20px',
+//               outline: 'none',
+//               border: 'none',
+//               color: '#fff',
+//               fontSize: '18px',
+//               cursor: this.state.isSpinning ? 'not-allowed' : 'pointer'
+//             }}
+//           >
+//             {this.state.isSpinning ? 'Spinning...' : 'Spin'}
+//           </button>
+//         </div>
+
+//         <style jsx>{`
+//           .start-rotate {
+//             animation: start-rotate 1s linear infinite;
+//           }
+
+//           @keyframes start-rotate {
+//             100% {
+//               transform: rotate(360deg);
+//             }
+//           }
+
+//           .stop-rotate {
+//             animation-play-state: paused;
+//           }
+//         `}</style>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Spin;
