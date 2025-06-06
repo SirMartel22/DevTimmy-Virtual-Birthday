@@ -6,8 +6,7 @@ export default defineConfig({
   plugins: [react()],
     optimizeDeps: {
       include: ['@ffmpeg/ffmpeg'],
-      exclude: ['@ffmpeg/ffmpeg', '@ffmpeg/core'],
-      
+      // exclude: ['@ffmpeg/ffmpeg', '@ffmpeg/core'],
   },
   build: {
     target: 'esnext',

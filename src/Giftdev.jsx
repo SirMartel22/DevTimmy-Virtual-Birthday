@@ -44,7 +44,7 @@ const Giftdev = () => {
 
       </div>
 
-        <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick = {()=> navigate("/Spinintro")}> Next </button>
+        {/* <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick = {()=> navigate("/Spinintro")}> Next </button> */}
     </div>
   )
 }
