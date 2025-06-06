@@ -11,7 +11,8 @@ const Pass = () => {
 
         <div className ="description flex flex-col lg:flex md:flex space-y-4">
           <h2 className="font-bold text-2xl lg:text-3xl md:text-3xl">Kindly Provide Your Pass</h2>
-          <p> Please give my bouncer a gate pass so he doesn’t start flexing unnecessary power  </p>
+          <span className="font-bold">Click Continue to Venue after filling in the form</span> 
+          <p> Please give my bouncer a gate pass so he doesn’t start flexing unnecessary power.</p>
           <span className="text-5xl">😂</span>
         </div>
 
@@ -39,11 +40,16 @@ const Pass = () => {
                   </div>
               
 
-              </form>
+        </form>
+        
+          </div>
+          
+         <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
+          
+            <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/Welcome')}> Return to Previous Page</button>
             <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/Video')}> Continue to The Venue</button>
               
           </div>
-          
 
 
       

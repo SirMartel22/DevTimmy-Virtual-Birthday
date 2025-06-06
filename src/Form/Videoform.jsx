@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import image from '../assets/cardImage.jpg'
 import { supabase, uploadVideo } from '../supabaseClient'
+import { useNavigate } from 'react-router-dom'
 // 
 
 
 const Videoform = () => {
+    const navigate = useNavigate()
 
     const [name, setName] = useState('')
     const [video, setVideo] = useState(null)
@@ -119,8 +121,13 @@ const Videoform = () => {
                     </form>
                 </div>
 
-        </div>
-        
+              </div>
+              
+              <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
+                <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/GiftDev')}> Return to Previous Page</button>
+                <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Spinintro')}>Proceed to Present Your gift</button>
+              </div>
+              
           </div>
         </div>
   )

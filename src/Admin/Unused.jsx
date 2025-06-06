@@ -28,6 +28,7 @@
             }
         }
 
+
         const testRealTime = () => {
             console.log('Testing real-time connections...')
         }
@@ -82,6 +83,10 @@
                     return
                 }
 
+                //Find the download button inside the card and hide it
+                const downloadBtn = cardElement.querySelector('.download-btn')
+             
+                if (downloadBtn) downloadBtn.style.display = 'none'
                 //Convert the card to canvas
                 const canvas = await html2canvas(cardElement, {
                     background: '#4E6688',
@@ -89,6 +94,10 @@
                     useCORS: true,//Handle cross-origin images
                     allowTaint: true
                 })
+
+                //Restor the button's display
+                if (downloadBtn) downloadBtn.style.display = 'none'
+
 
                 // convert canvas to blob and download
                 canvas.toBlob((blob) => {
@@ -129,12 +138,20 @@
                     <div className="grid grid-cols-1 md:grid-cols lg:grid-cols-3 gap-6">
                         {gifts.map((gift) => (
                             //   console.log(gift)
-                            <div key={gift.id} id={`card-${gift.id}`} className="bg-[#4E6688] rounded-lg shadow-lg p-4">
-                                <img
-                                    src={gift.image_url}
-                                    alt={`Throwback from ${gift.name}`}
-                                    className="w-full h-48 object-cover rounded-lg mb-4"
-                                />
+                            
+                            <div key={gift.id} id={`card-${gift.id}`} className="bg-[#4E6688] rounded-lg shadow-lg p-4 ">
+                                {gift.image_url ? (
+                                    <img
+                                        src={gift.image_url}
+                                        alt={`Throwback from ${gift.name}`}
+                                        className="w-full h-48 object-cover rounded-lg mb-4"
+                                    />
+                                ) : (
+                                        <div className="w-full h-auto flex- items-center justify-center rounded-lg mb-4 bg-[#332D56] text-center p-4">
+                                            {gift.message_body || "No message provided."}
+                                        </div>
+                                )}
+
                                 <h3 className="text-lg font-semibold">From: {gift.name}</h3>
                                 <p className="text-sm text-gray-500">
                                     {new Date(gift.created_at).toLocaleDateString()}
@@ -149,7 +166,7 @@
                                 </button> */}
                               <button
                                     onClick={() => downloadCard(gift)}
-                                    className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
+                                    className="download-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
                                 >
                                     Download Image
                                 </button>
