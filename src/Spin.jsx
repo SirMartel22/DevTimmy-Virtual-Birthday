@@ -18,7 +18,7 @@ class Spin extends React.Component {
           6: "/Gifts/Karaoke",
           7: "/Gifts/Megaphone",
           8: "/Gifts/Meme",
-          9: "/Gift/Shout",
+          9: "/Gifts/Shout",
           10: "/Gifts/Superfan"
         }
 
@@ -65,15 +65,17 @@ class Spin extends React.Component {
     const selectedNumber = (sectionIndex % 10) + 1;
 
     // show alerts with selected page
-    alert(`Hurray you won a wonderful gift for yourself ${selectedNumber}!`);
+    alert(`Hurray you won a wonderful gift for yourself ${this.colorPages[selectedNumber]}!`);
 
     //redirect to the corresponding page
-    setTimeout(() => {
+    // this.props.history.push(this.colorPages[selectedNumber]);
+    window.location.href = this.colorPages[selectedNumber];
+    // setTimeout(() => {
 
 
 
-      console.log(`Would redirect to: ${this.colorPages[selectedNumber]}}`)
-    }, 2000)
+    //   console.log(`Would redirect to: ${this.colorPages[selectedNumber]}}`)
+    // }, 2000)
   }
 
   render() {
@@ -126,12 +128,12 @@ class Spin extends React.Component {
             listStyle: "none",
             overflow: "hidden"
           }}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, index) => {
+            {['Cake', "Candle", "Confetti", "Dancer", "Giftbox", "Karaoke", "Megaphone", "Meme", "Shout", "Superfan"].map((gift, index) => {
               const colors = ['violet', "blue", "yellow", "green", "orange", "#dda853", 'indigo', 'brown', "#00809d", "#ff8383"];
               const rotation = index * 36;
 
               return (
-                <li key={num} style={{
+                <li key={gift} style={{
                   overflow: 'hidden',
                   position: 'absolute',
                   top: 0,
@@ -155,7 +157,7 @@ class Spin extends React.Component {
                     fontSize: "18px",
                     backgroundColor: colors[index]
                   }}>
-                    {num}
+                    {gift}
                   </div>
                 </li>
               );
