@@ -15,6 +15,7 @@ import Videoform from './Form/Videoform'
 import Throwback from './Form/Throwback'
 import Admin from './Admin/Admin'
 import Unused from './Admin/Unused'
+import Cake from './Gifts/Cake'
 // import Converter from './Admin/Converter'
 
 
@@ -46,6 +47,8 @@ const App = () => {
           <Route path='/Form/Throwback' element={<Throwback />} />
           <Route path='/Admin/Admin' element={<Admin />} />
           <Route path='/Admin/Unused' element={<Unused />} />
+          <Route path='/Gifts/Cake' element={<Cake />} />
+
           {/* <Route path='/Admin/Converter' element={<Converter />} /> */}
 
           
