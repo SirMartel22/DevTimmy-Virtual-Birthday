@@ -80,8 +80,6 @@ class Spin extends React.Component {
 
   render() {
     return (
-
- 
       <div style={{
         textAlign: 'center',
         padding: '20px',
@@ -93,7 +91,7 @@ class Spin extends React.Component {
           fontSize: "180%",
           color: "#f5f5f5"
         }}>
-          Spin and get a package for attending DevTimmy's Birthday Party
+          {/*Spin and get a package for attending DevTimmy's Birthday Party */}
         </h2>
 
         <div style={{
