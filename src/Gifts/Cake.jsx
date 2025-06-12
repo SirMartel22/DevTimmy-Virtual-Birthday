@@ -1,16 +1,93 @@
-import React from 'react';
-import {useNavigate} from "react-router-dom"
+import React, { useState, useEffect} from 'react';
+import { useNavigate } from "react-router-dom"
+import { RiCandleLine } from "react-icons/ri";
+import { CakeSlice } from 'lucide-react';
+import ReactConfetti from "react-confetti"
+import html2canvas from 'html2canvas'
 
 const Cake = () => {
 
+    // This code section for confetti dropdown
+    const [windowDimension, setDimension] = useState({ width: window.innerWidth, height: window.innerHeight })
+    
+    const detectSize = () => {
+        setDimension({ width: window.innerWidth, height: window.innerHeight })
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', detectSize);
+        return () => {
+            window.removeEventListener('resize', detectSize)
+        }
+    }, [windowDimension])
+
+    // navigation code
+
+    // downloading the card code
+    const downloadCard = async() => {
+        try {
+            console.log('Downloading...')
+
+           
+
+            const cardElement = document.getElementById('gift-card');
+            console.log(cardElement)
+
+             // find the download button inside the card element and hide it
+            const downloadBtn = cardElement.querySelector('.download-btn');
+            console.log(downloadBtn)
+            if (downloadBtn) downloadBtn.style.display = 'none';
+
+            // convert the card to canvas for download
+            const canvas = await html2canvas(cardElement, {
+                scale: 2,
+                useCORS: true,
+                allowTaint: true
+            });
+
+            // convert canvas to blob and download
+            canvas.toBlob((blob) => {
+
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement('a')
+                link.href = url
+                link.download = "Your download"
+                
+                document.body.appendChild(link);
+                link.click()
+    
+                //cleanUp 
+                document.body.removeChild(link);
+                window.URL.revokeObjectURL(url)
+    
+                console.log('Card downloaded')
+            })
+
+             // restore the buttons's display
+            if (downloadBtn) downloadBtn.style.display = "block";
+
+        } catch (error) {
+            alert("download failed: ")
+            console.log("download failed: ", error)
+
+        }
+    }
   const navigate = useNavigate()
   return (
-    <div>
-
+      <div className="flex flex-col items-center justify-center">
+          <ReactConfetti
+              width={windowDimension.width}
+              height={windowDimension.height}
+              tweenDuration = {1000}
+          />
+          
+          <h2 className="font-bold text-2xl"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
+          <h4> You can download it and post on your status as an evidence that you showed up</h4>
+        
     {/* <!-- Content area --> */}
     <div class="relative z-10 min-h-screen flex items-center justify-center p-8 items-center">
         
-        <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 max-w-md w-full text-center shadow-xl">
+        <div id="gift-card"  class="bg-white/80 backdrop-blur-sm rounded-md p-8 max-w-md w-full text-center shadow-xl">
             {/* <!-- Candle icon --> */}
             <div class="mb-6">
                       
@@ -36,17 +113,17 @@ const Cake = () => {
                     <div 
                     class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-emerald-100/30 rounded-full"></div>
                 </div>
-                        <svg class="w-8 h-8 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2c0 1.5-1 3-1 4.5 0 1.5 1 2.5 1 2.5s1-1 1-2.5c0-1.5-1-3-1-4.5z"/>
-                        <rect x="11" y="8" width="2" height="12" rx="1"/>
-                        <ellipse cx="12" cy="21" rx="3" ry="1"/>
-                    </svg>
                 </div>
-            </div>
+                    <div className="w-24 h-24 text-emerald-600 mx-auto ">
+                      <CakeSlice className="w-full h-full text-emerald-600 mx-auto "  />
+                  </div>
+                  </div>
+                  
+                 
             
-            <h1 class="text-3xl font-bold text-emerald-600 mb-6">Virtual Candle</h1>
+            <h1 class="text-3xl font-bold text-emerald-600 mb-6">Cake Slice</h1>
             
-            <p class="text-gray-700 text-lg mb-8">You won a birthday candle to light for DevTimmy!</p>
+            <p class="text-gray-700 text-lg mb-8 font-bold">You won a birthday candle to light for DevTimmy!</p>
             
             {/* <!-- Candle icon in content --> */}
             <div class="mb-8">
@@ -57,32 +134,31 @@ const Cake = () => {
                 </svg>
             </div>
             
-            <p class="text-gray-600 mb-8">I lit a candle for DevTimmy's big day! 🎂 #BdaySpin</p>
+                  <p class="text-gray-600 mb-8 font-bold">I won a Slice of Cake at DevTimmy's </p>
+                  <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
+                 
             
             {/* <!-- Buttons --> */}
             <div class="space-y-4">
-                <button class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
+                      <button
+                          className=" download-btn w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center gap-2"
+                          onClick={() => downloadCard()}
+                         
+                      >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
                     Download
                 </button>
                 
-                <button class="w-full bg-white hover:bg-gray-50 text-emerald-600 font-semibold py-3 px-6 rounded-xl border-2 border-emerald-200 transition-colors flex items-center justify-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
-                    </svg>
-                    Share
-                </button>
+                
             </div>
             
-            <button class="mt-6 text-gray-500 hover:text-gray-700 font-medium transition-colors">
-                Try Again
-            </button>
+      
         </div>
     </div>
         {/* <button onClick ={()=>navigate('./Thanks')}> Process</button> */}
-      <button className="bg-[#94B4C1] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick={() => navigate('../Thanks')}> Proceeds to Checkout </button>
+      <button className="bg-[#27548A]  py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick={() => navigate('../Thanks')}> Proceeds to Checkout </button>
 
     </div>
   );
