@@ -89,9 +89,10 @@ class Spin extends React.Component {
           display: 'inline-block',
           fontWeight: 'bold',
           fontSize: "180%",
-          color: "#f5f5f5"
+          color: "#f5f5f5",
+          marginBottom: "50px",
         }}>
-          {/*Spin and get a package for attending DevTimmy's Birthday Party */}
+          Spin and get a package for attending DevTimmy's Birthday Party
         </h2>
 
         <div style={{
@@ -116,8 +117,8 @@ class Spin extends React.Component {
 
           {/* Spinner Wheel */}
           <ul className={this.state.name} style={{
-            width: '25em',
-            height: '25em',
+            width: '20em',
+            height: '20em',
             border: "1px solid #fff",
             position: 'relative',
             padding: 0,
@@ -171,10 +172,10 @@ class Spin extends React.Component {
               position: 'absolute',
               left: "50%",
               transform: "translateX(-50%)",
-              width: '120px',
-              height: '40px',
+              width: '170px',
+              height: '50px',
               backgroundColor: this.state.isSpinning ? '#ccc' : 'rgb(72, 129, 175)',
-              borderRadius: '20px',
+              borderRadius: '10px',
               marginTop: "20px",
               outline: "none",
               border: "none",
