@@ -6,10 +6,11 @@ export default defineConfig({
   plugins: [react()],
     optimizeDeps: {
       include: ['@ffmpeg/ffmpeg'],
-      // exclude: ['@ffmpeg/ffmpeg', '@ffmpeg/core'],
   },
   build: {
     target: 'esnext',
+    chunkSizeWarningLimit: 1000, // Increase limit to 1000 KB
+
   },
 })
 
