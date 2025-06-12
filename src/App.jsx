@@ -16,6 +16,23 @@ import Throwback from './Form/Throwback'
 import Admin from './Admin/Admin'
 import Unused from './Admin/Unused'
 import Cake from './Gifts/Cake'
+import Candle from './Gifts/Candle'
+import Confetti from './Gifts/Confetti'
+import Dancer from './Gifts/Dancer'
+import Giftbox from './Gifts/Giftbox'
+import Karaoke from './Gifts/Karaoke'
+import Megaphone from './Gifts/Megaphone'
+import Meme from './Gifts/Meme'
+import Shout from './Gifts/Shout'
+import Superfan from './Gifts/Superfan'
+
+
+
+
+
+
+
+
 // import Converter from './Admin/Converter'
 
 
@@ -29,8 +46,6 @@ const App = () => {
 
   return (
     <div>
-
-      
       <BrowserRouter>
         <Routes>
           <Route index element={<Welcome/>} />
@@ -48,10 +63,20 @@ const App = () => {
           <Route path='/Admin/Admin' element={<Admin />} />
           <Route path='/Admin/Unused' element={<Unused />} />
           <Route path='/Gifts/Cake' element={<Cake />} />
-
-          {/* <Route path='/Admin/Converter' element={<Converter />} /> */}
-
-          
+          <Route path='/Gifts/Candle' element={<Candle />} />
+          <Route path='/Gifts/Cake' element={<Cake />} />
+          <Route path='/Gifts/Cake' element={<Cake />} />
+          <Route path='/Gifts/Cake' element={<Cake />} />
+          <Route path='/Gifts/Cake' element={<Cake />} />
+          <Route path='/Gifts/Candle' element={<Candle />} />
+          <Route path='/Gifts/Confetti' element={<Confetti />} />
+          <Route path='/Gifts/Dancer' element={<Dancer />} />
+          <Route path='/Gifts/Giftbox' element={<Giftbox />} />
+          <Route path='/Gifts/Karaoke' element={<Karaoke />} />
+          <Route path='/Gifts/Megaphone' element={<Megaphone />} />
+          <Route path='/Gifts/Meme' element={<Meme />} />
+          <Route path='/Gifts/Shout' element={<Shout />} />
+          <Route path='/Gifts/Superfan' element={<Superfan />} />
           
         </Routes>
 

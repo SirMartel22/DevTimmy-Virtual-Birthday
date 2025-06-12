@@ -96,7 +96,7 @@
                 })
 
                 //Restor the button's display
-                if (downloadBtn) downloadBtn.style.display = 'none'
+                if (downloadBtn) downloadBtn.style.display = 'block'
 
 
                 // convert canvas to blob and download
@@ -157,13 +157,6 @@
                                     {new Date(gift.created_at).toLocaleDateString()}
                                 </p>
 
-                                {/* Download Button */}
-                                {/* <button
-                                    onClick={() => downloadCard(gift)}
-                                    className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
-                                >
-                                    Download Image
-                                </button> */}
                               <button
                                     onClick={() => downloadCard(gift)}
                                     className="download-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
