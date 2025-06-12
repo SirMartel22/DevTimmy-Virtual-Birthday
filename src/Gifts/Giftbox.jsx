@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom"
 import html2canvas from 'html2canvas'
 import ReactConfetti from 'react-confetti'
 import { CakeSlice } from "lucide-react"
+import award from '../assets/award.png'
+
 
 
 const Giftbox = () => {
@@ -125,13 +127,9 @@ const Giftbox = () => {
             <p class="text-gray-700 text-lg mb-8 font-bold">A birthday candle has been gifted to you for DevTimmy's celebration</p>
             
             {/* <!-- Candle icon in content --> */}
-            <div class="mb-8">
-                <svg class="w-12 h-12 mx-auto text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2c0 1.5-1 3-1 4.5 0 1.5 1 2.5 1 2.5s1-1 1-2.5c0-1.5-1-3-1-4.5z"/>
-                    <rect x="11" y="8" width="2" height="12" rx="1" fill="#8B4513"/>
-                    <ellipse cx="12" cy="21" rx="3" ry="1" fill="#8B4513"/>
-                </svg>
-            </div>
+                    <div class="mb-8 flex flex-col items-center justify-center">
+                                           <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
+                                 </div>
             
                   <p class="text-gray-600 mb-8 font-bold">To mark DevTimmy’s day, I offered a light to the sky. 🎂 </p>
                   <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
