@@ -14,11 +14,4 @@ export default defineConfig({
   },
 })
 
-// export default {
-//   optimizeDeps: {
-//     include: ['@ffmpeg/ffmpeg'],
-//   },
-//   build: {
-//     target: 'esnext',
-//   },
-// }
+
