@@ -31,7 +31,7 @@ const Pass = () => {
       alert("input field can't be empty")
       return
     } else {
-      alert("Hope you have fun in this Party! Welcome!!!")
+      alert(`Hi ${name}Hope you have fun in this Party! Welcome!!!`)
     }
 
     navigate('/Video')

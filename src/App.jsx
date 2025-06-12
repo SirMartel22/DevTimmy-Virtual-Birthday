@@ -27,18 +27,7 @@ import Shout from './Gifts/Shout'
 import Superfan from './Gifts/Superfan'
 
 
-
-
-
-
-
-
 // import Converter from './Admin/Converter'
-
-
-// import animatedBg from './assets/animated-bg.mp4'
-
-
 
 
 const App = () => {
