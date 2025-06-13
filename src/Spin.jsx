@@ -117,8 +117,8 @@ class Spin extends React.Component {
 
           {/* Spinner Wheel */}
           <ul className={this.state.name} style={{
-            width: '20em',
-            height: '20em',
+            width: '18em',
+            height: '18em',
             border: "1px solid #fff",
             position: 'relative',
             padding: 0,
