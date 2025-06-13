@@ -4,6 +4,8 @@ import html2canvas from 'html2canvas'
 import ReactConfetti from 'react-confetti'
 import { CakeSlice } from "lucide-react"
 import award from '../assets/award.png'
+import confetti from '../assets/confetti.jpg'
+
 
 
 
@@ -94,7 +96,7 @@ const Confetti = () => {
             <div class="mb-6">
                       
                 
-            <div class="w-16 h-16 mx-auto bg-purple-100 rounded-full flex items-center justify-center">
+            <div class="w-16 h-1 mx-auto bg-purple-100 rounded-full flex items-center justify-center">
                     {/* <!-- Background container --> */}
                 <div class="fixed inset-0 -z-10 overflow-hidden">
                     {/* <!-- Large blob top-left --> */}
@@ -117,22 +119,22 @@ const Confetti = () => {
                 </div>
                 </div>
                     <div className="w-24 h-24 text-purple-600 mx-auto ">
-                      <CakeSlice className="w-full h-full text-purple-600 mx-auto "  />
+                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={confetti} />
                   </div>
                   </div>
                   
                  
             
-            <h1 class="text-3xl font-bold text-purple-600 mb-6">Virtual Candle</h1>
+            <h1 class="text-3xl font-bold text-purple-600 mb-6">Confetti Popper</h1>
             
-            <p class="text-gray-700 text-lg mb-8 font-bold">A birthday candle has been gifted to you for DevTimmy's celebration</p>
+            <p class="text-gray-700 text-lg mb-8 font-bold">That confetti pop? ICONIC. You brought the sparkle to DevTimmy’s celebration! 🎊💥👏</p>
             
             {/* <!-- Candle icon in content --> */}
-                      <div class="mb-8 flex flex-col items-center justify-center">
-                                             <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
-                                   </div>
+                      <div class="mb-4 flex flex-col items-center justify-center">
+                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
+                    </div>
             
-                  <p class="text-gray-600 mb-8 font-bold">To mark DevTimmy’s day, I offered a light to the sky. 🎂 </p>
+                  <p class="text-gray-600 mb-4 font-bold">I popped Confetti at the Event, it was fun</p>
                   <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
                  
             

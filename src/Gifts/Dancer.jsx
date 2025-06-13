@@ -4,6 +4,8 @@ import html2canvas from 'html2canvas'
 import ReactConfetti from 'react-confetti'
 import { CakeSlice } from "lucide-react"
 import award from '../assets/award.png'
+import dancer from '../assets/dancer.jpg'
+
 
 
 const Dancer = () => {
@@ -81,7 +83,7 @@ const Dancer = () => {
               tweenDuration = {1000}
           />
           
-          <h2 className="font-bold text-2xl"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
+          <h2 className="font-bold text-2xl"> Congratulations!!! You won the Best Dancer Award at DevTimmy's Birthday Party, Enjoy</h2>
           <h4> You can download it and post on your status as an evidence that you showed up</h4>
         
     {/* <!-- Content area --> */}
@@ -92,7 +94,7 @@ const Dancer = () => {
             <div class="mb-6">
                       
                 
-            <div class="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center">
+            <div class="w-16 h-4 mx-auto bg-orange-100 rounded-full flex items-center justify-center">
                     {/* <!-- Background container --> */}
                 <div class="fixed inset-0 -z-10 overflow-hidden">
                     {/* <!-- Large blob top-left --> */}
@@ -114,23 +116,24 @@ const Dancer = () => {
                     class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-orange-100/30 rounded-full"></div>
                 </div>
                 </div>
+                
                     <div className="w-24 h-24 text-orange-600 mx-auto ">
-                      <CakeSlice className="w-full h-full text-orange-600 mx-auto "  />
-                  </div>
+                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={dancer} />
+                    </div>
                   </div>
                   
                  
             
-            <h1 class="text-3xl font-bold text-orange-600 mb-6">Best Dancer</h1>
+            <h1 class="text-3xl font-bold text-orange-600 mb-4">Best Dancer</h1>
             
-            <p class="text-gray-700 text-lg mb-8 font-bold">A birthday candle has been gifted to you for DevTimmy's celebration</p>
+            <p class="text-gray-700 text-lg mb-6 font-bold">Your moves spoke louder than words. Dancefloor MVP right here! 💃🕺🎉</p>
             
             {/* <!-- Candle icon in content --> */}
-                      <div class="mb-8 flex flex-col items-center justify-center">
-                                             <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
-                                   </div>
+                <div class="mb-8 flex flex-col items-center justify-center">
+                    <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
+                </div>
             
-                  <p class="text-gray-600 mb-8 font-bold">To mark DevTimmy’s day, I offered a light to the sky. 🎂 </p>
+                  <p class="text-gray-600 mb-4 font-bold">I won the best dancer in the event</p>
                   <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
                  
             

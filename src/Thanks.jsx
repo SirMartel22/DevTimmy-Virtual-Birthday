@@ -12,6 +12,8 @@ const Thanks = () => {
         <h2>
           One More thing, Pick a form on your way by clicking the below link while checking out
         </h2>
+
+        <a href="https://forms.gle/BWzK9u9wZq3Lgypy7">Click Here</a>
       </div>
     </div>
   )
