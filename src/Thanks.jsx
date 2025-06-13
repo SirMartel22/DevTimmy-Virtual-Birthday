@@ -1,8 +1,8 @@
 import React from 'react'
+import thank from '../assets/thanks.jpg'
 
 const Thanks = () => {
 
-  // const link = https://forms.gle/BWzK9u9wZq3Lgypy7";
   return (
     <div>
       
@@ -25,7 +25,7 @@ const Thanks = () => {
           Thank You!!!
         </h2> 
         <div className="w-32 h-32 text-orange-600 mx-auto ">
-           <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src='https://tenor.com/view/cant-thankyou-enough-gif-18342903254576257602' />
+          <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src={ thank } />
         </div>
         
       </div>
