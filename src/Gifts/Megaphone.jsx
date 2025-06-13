@@ -126,8 +126,8 @@ const Megaphone = () => {
             <p class="text-gray-700 text-lg mb-8 font-bold"> From start to finish, you kept the party alive and the ears on alert! 🔊😂🙌 </p>
             
             {/* <!-- Candle icon in content --> */}
-           <div className="w-24 h-24 text-orange-600 mx-auto ">
-                <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
+           <div className="w-32 h-32 text-orange-600 mx-auto ">
+                <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src={award} />
             </div>
             
                   <p class="text-gray-600 mb-4 font-bold">Oga on the Megaphone </p>

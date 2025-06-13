@@ -115,8 +115,8 @@ const Karaoke = () => {
                      class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-pink-100/30 rounded-full"></div>
                  </div>
                  </div>
-                     <div className="w-24 h-24 text-pink-600 mx-auto ">
-                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={karaoke} />
+                     <div className="w-32 h-32 text-pink-600 mx-auto ">
+                        <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src={karaoke} />
                    </div>
                    </div>
                    

@@ -94,53 +94,53 @@ const Superfan = () => {
             <div class="mb-6">
                       
                 
-            <div class="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <div class="w-16 h-1 mx-auto bg-red-100 rounded-full flex items-center justify-center">
                     {/* <!-- Background container --> */}
                 <div class="fixed inset-0 -z-10 overflow-hidden">
                     {/* <!-- Large blob top-left --> */}
-                    <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-200/60 rounded-full blob-1">
+                    <div class="absolute -top-32 -left-32 w-96 h-96 bg-red-200/60 rounded-full blob-1">
                     </div>
                     
                     {/* <!-- Medium blob top-center --> */}
-                    <div class="absolute -top-16 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-emerald-100/80 rounded-full blob-2"></div>
+                    <div class="absolute -top-16 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-red-100/80 rounded-full blob-2"></div>
                     
                     {/* <!-- Small blob bottom-right --> */}
-                    <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-emerald-200/50 rounded-full blob-3"></div>
+                    <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-red-200/50 rounded-full blob-3"></div>
                     
                     {/* <!-- Additional subtle blob --> */}
-                    <div class="absolute top-1/3 -left-20 w-48 h-48 bg-emerald-100/40 rounded-full blob-4"></div>
+                    <div class="absolute top-1/3 -left-20 w-48 h-48 bg-red-100/40 rounded-full blob-4"></div>
                     
                     {/* <!-- Extra decorative elements --> */}
-                    <div class="absolute top-2/3 right-1/4 w-32 h-32 bg-emerald-50/60 rounded-full"></div>
+                    <div class="absolute top-2/3 right-1/4 w-32 h-32 bg-red-50/60 rounded-full"></div>
                     <div 
-                    class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-emerald-100/30 rounded-full"></div>
+                    class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-red-100/30 rounded-full"></div>
                 </div>
                 </div>
-                    <div className="w-24 h-24 text-emerald-600 mx-auto ">
-                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={superfan} />
+                    <div className="w-32 h-32 text-red-600 mx-auto ">
+                        <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src={superfan} />
                   </div>
                   </div>
                   
                  
             
-            <h1 class="text-3xl font-bold text-emerald-600 mb-6">Virtual Candle</h1>
+            <h1 class="text-3xl font-bold text-red-600 mb-6">Virtual Candle</h1>
             
             <p class="text-gray-700 text-lg mb-8 font-bold">A birthday candle has been gifted to you for DevTimmy's celebration</p>
             
             {/* <!-- Candle icon in content --> */}
-            <div class="mb-8 flex flex-col items-center justify-center">
+            <div class="mb-4 flex flex-col items-center justify-center">
                 <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
             </div>
                        
             
-                  <p class="text-gray-600 mb-8 font-bold">To mark DevTimmy’s day, I offered a light to the sky. 🎂 </p>
+                  <p class="text-gray-600 mb-4 font-bold">To mark DevTimmy’s day, I offered a light to the sky. 🎂 </p>
                   <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
                  
             
             {/* <!-- Buttons --> */}
             <div class="space-y-4">
                       <button
-                          className=" download-btn w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center gap-2"
+                          className=" download-btn w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center gap-2"
                           onClick={() => downloadCard()}
                          
                       >
