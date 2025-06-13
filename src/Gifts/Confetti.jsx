@@ -78,18 +78,18 @@ const Confetti = () => {
     }
   const navigate = useNavigate()
   return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-center">
           <ReactConfetti
               width={windowDimension.width}
               height={windowDimension.height}
               tweenDuration = {1000}
           />
           
-          <h2 className="font-bold text-2xl"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
+          <h2 className="font-bold text-2xl text-center py-8"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
           <h4> You can download it and post on your status as an evidence that you showed up</h4>
         
     {/* <!-- Content area --> */}
-    <div class="relative z-10 min-h-screen flex items-center justify-center p-8 items-center">
+    <div class="relative z-10 min-h-screen flex items-center justify-center p-8 items-center pb-12">
         
         <div id="gift-card"  class="bg-white/80 backdrop-blur-sm rounded-md p-8 max-w-md w-full text-center shadow-xl">
             {/* <!-- Candle icon --> */}
