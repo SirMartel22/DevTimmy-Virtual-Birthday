@@ -7,7 +7,10 @@ const Spinintro = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-16 ">
       
-      <h2 className="font-bold text-2xl text-center"> Ahan ahan, “You wan just attend DevTimmy’s virtual birthday like that? No proof? 😭📸”</h2>
+      <h2 className="font-bold text-2xl text-center"> Ahan ahan, “You wan just attend DevTimmy’s virtual birthday like that? No proof? 😭📸</h2>
+      
+      <h2 className="font-bold text-2xl text-center"> Grab a gift for youself too</h2>
+
 
        <div className=" flex justify-center items-center">
           <img className="rounded-md w-full h-full lg:w-[70%] lg:h-[55%] shadow-div-shadow-2 hover:scale-105 transform transition duration-500" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanh2bDYyYTlwY2s2enkxbGRzOHdkanJlbGRpazkzb2pmbXVpZmV4eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MFIsOqzodLr7ewnkUb/giphy.gif"/>
