@@ -8,7 +8,7 @@ const Video = () => {
           
         <div className="celebrant-Video flex flex-col items-center justify-center">
               
-          <h2 className="text-3xl">Hi Guys! Listen to DevTimmy Talk 🤭 </h2>
+          <h2 className="text-3xl text-center">Hi Guys! Listen to DevTimmy Talk 🤭 </h2>
 
           <div>
               <video autoPlay className="">
