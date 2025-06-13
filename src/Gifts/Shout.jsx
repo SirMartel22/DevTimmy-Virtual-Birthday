@@ -2,7 +2,9 @@ import React, {useState, useEffect} from 'react'
 import { useNavigate } from "react-router-dom"
 import html2canvas from 'html2canvas'
 import ReactConfetti from 'react-confetti'
-import { CakeSlice } from "lucide-react"
+import award from '../assets/award.png'
+
+
 
 const Shout = () => {
     // This code section for confetti dropdown

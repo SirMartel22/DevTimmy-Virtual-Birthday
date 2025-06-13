@@ -5,6 +5,8 @@ import { CakeSlice } from 'lucide-react';
 import ReactConfetti from "react-confetti"
 import html2canvas from 'html2canvas'
 import award from '../assets/award.png'
+import cake from '../assets/cake.jpg'
+
 
 const Cake = () => {
 
@@ -93,7 +95,7 @@ const Cake = () => {
             <div class="mb-6">
                       
                 
-            <div class="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <div class="w-16 h-1 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
                     {/* <!-- Background container --> */}
                 <div class="fixed inset-0 -z-10 overflow-hidden">
                     {/* <!-- Large blob top-left --> */}
@@ -116,7 +118,7 @@ const Cake = () => {
                 </div>
                 </div>
                     <div className="w-24 h-24 text-emerald-600 mx-auto ">
-                      <CakeSlice className="w-full h-full text-emerald-600 mx-auto "  />
+                       <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={cake} />
                   </div>
                   </div>
                   
@@ -124,14 +126,14 @@ const Cake = () => {
             
             <h1 class="text-3xl font-bold text-emerald-600 mb-6">Cake Slice</h1>
             
-            <p class="text-gray-700 text-lg mb-8 font-bold">You won a birthday candle to light for DevTimmy!</p>
+            <p class="text-gray-700 text-lg mb-8 font-bold">Big win! You’ve been chosen to cut the cake alongside DevTimmy. Now that’s legendary status! 🎂🎉👑</p>
             
             {/* <!-- Candle icon in content --> */}
             <div class="mb-8 flex flex-col items-center justify-center">
                       <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={award} />
             </div>
             
-                  <p class="text-gray-600 mb-8 font-bold">I won a Slice of Cake at DevTimmy's </p>
+                  <p class="text-gray-600 mb-2 font-bold">I cut the Cake alongside DevTimmy </p>
                   <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
                  
             
