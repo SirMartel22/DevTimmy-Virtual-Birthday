@@ -117,8 +117,8 @@ const Dancer = () => {
                 </div>
                 </div>
                 
-                    <div className="w-24 h-24 text-orange-600 mx-auto ">
-                        <img className="rounded-md w-24 h-24 lg:w-24 lg:h-24 hover:scale-105 transform transition duration-500" src={dancer} />
+                    <div className="w-32 h-32 text-orange-600 mx-auto ">
+                        <img className="rounded-md w-32 h-32 lg:w-32 lg:h-32 hover:scale-105 transform transition duration-500" src={dancer} />
                     </div>
                   </div>
                   
