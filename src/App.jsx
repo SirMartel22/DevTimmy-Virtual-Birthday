@@ -26,6 +26,7 @@ import Megaphone from './Gifts/Megaphone'
 import Meme from './Gifts/Meme'
 import Shout from './Gifts/Shout'
 import Superfan from './Gifts/Superfan'
+import { Analytics } from '@vercel/analytics/react'
 
 
 // import Converter from './Admin/Converter'
@@ -73,6 +74,7 @@ const App = () => {
         </Routes>
 
       </BrowserRouter>
+      <Analytics />
    </div>
   )
 }
