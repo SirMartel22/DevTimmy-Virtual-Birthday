@@ -19,7 +19,7 @@ const Thanks = () => {
         </h2> 
         
         <h2>
-          Thank you so much for joining DevTimmy’s Virtual Birthday Party. Really glad to have you made it here today
+          Thank you so much for joining DevTimmy’s Virtual Birthday Party. Really glad you made it here today
         </h2>
 
         <h2>
