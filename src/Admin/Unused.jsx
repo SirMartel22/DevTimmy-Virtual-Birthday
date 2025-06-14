@@ -139,7 +139,7 @@
                         {gifts.map((gift) => (
                             //   console.log(gift)
                             
-                            <div key={gift.id} id={`card-${gift.id}`} className="bg-[#4E6688] rounded-lg shadow-lg p-4 ">
+                            <div key={gift.id} id={`card-${gift.id}`} className="bg-hero bg-opacity-60 flex flex-col items-center justify-center gap-4 rounded-lg shadow-lg p-4 ">
                                 {gift.image_url ? (
                                     <img
                                         src={gift.image_url}
@@ -147,19 +147,23 @@
                                         className="w-full h-48 object-cover rounded-lg mb-4"
                                     />
                                 ) : (
-                                        <div className="w-full h-auto flex- items-center justify-center rounded-lg mb-4 bg-[#332D56] text-center p-4">
+                                        <div className="w-full h-auto flex- items-center justify-center rounded-lg mb-4 bg-gradient-to-r from-[#332D56] to-[#001f54] text-center p-4">
                                             {gift.message_body || "No message provided."}
                                         </div>
                                 )}
 
-                                <h3 className="text-lg font-semibold">From: {gift.name}</h3>
-                                <p className="text-sm text-gray-500">
+                                <h3 className="text-lg font-semibold">{gift.name} Sent This</h3>
+                                <p className="text-sm text-white-500">
                                     {new Date(gift.created_at).toLocaleDateString()}
+                                </p>
+
+                                <p className="text-sm text-white-500 pt-8">
+                                    #Virtu_Festiva
                                 </p>
 
                               <button
                                     onClick={() => downloadCard(gift)}
-                                    className="download-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
+                                    className="download-btn w-full bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded-md transition duration-300"
                                 >
                                     Download Image
                                 </button>

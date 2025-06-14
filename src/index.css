@@ -13,3 +13,9 @@
   font-family: "Comfortaa", sans-serif;
   padding: 7% 7%;
 }
+
+.bg-hero {
+  background-image:url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center
+}
