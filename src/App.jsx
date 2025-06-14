@@ -2,6 +2,7 @@
 import React from 'react'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Coming from './Coming'
 import Welcome from './Welcome'
 import Giftdev from './Giftdev'
 import Spin from './Spin'
@@ -37,7 +38,9 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Welcome/>} />
+          <Route index element={<Coming/>} />
+          {/* <Route index element={<Welcome/>} /> */}
+          <Route path='/welcome' element={<Coming />} />
           <Route path='/welcome' element={<Welcome />} />
           <Route path='/Giftdev' element={<Giftdev />} />
           <Route path='/Pass' element={<Pass />} />
