@@ -19,7 +19,9 @@ const Pass = () => {
     "Olaronke": "Eola Boss, Welcome ma😂",
     "Ronke": "Eola Boss, Welcome ma😂",
     "Esther": "Troublesome fellow 😂😂😂. Anyways, I so much appreciate you for showing up. Gbayi",
-
+    "Zachaeus": "Professional Graphic Designer. Thanks so much for showing up!!!🙌🏽😂😂😂",
+    "Stephen": "This man can whine for Africa. I appreciate you for showing up🙌🏽😂😂😂",
+    "Feranmi": "CEO, The surprise lounge, Appreciate you for showing up. Come Finish your website fah🙌🏽😂😂😂",
   }
 
   const handleSubmit = (e) => {
