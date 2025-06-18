@@ -41,8 +41,8 @@ const App = () => {
         <Routes>
           <Route index element={<Coming/>} />
           {/* <Route index element={<Welcome/>} /> */}
-          <Route path='/welcome' element={<Coming />} />
-          <Route path='/welcome' element={<Welcome />} />
+          <Route path='/Coming' element={<Coming />} />
+          <Route path='/Welcome' element={<Welcome />} />
           <Route path='/Giftdev' element={<Giftdev />} />
           <Route path='/Pass' element={<Pass />} />
           <Route path='/Spin' element={<Spin />} />
