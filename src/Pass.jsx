@@ -15,8 +15,11 @@ const Pass = () => {
     "ire": "Deaconess!!! 🙌🏽😂😂😂 ",
     "pope": "Pope Olowo, Alhaji Oni gold ni Texas 🙌🏽😂😂😂, Thanks so much for being here Sir",
     "eazy": "#Do_Real_Thing, Welcome Boss😂",
+    "esee": "My exceutive Producer😂",
     "Olaronke": "Eola Boss, Welcome ma😂",
     "Ronke": "Eola Boss, Welcome ma😂",
+    "Esther": "Troublesome fellow 😂😂😂. Anyways, I so much appreciate you for showing up. Gbayi",
+
   }
 
   const handleSubmit = (e) => {
