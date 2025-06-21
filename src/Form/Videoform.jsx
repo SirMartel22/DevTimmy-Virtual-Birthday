@@ -122,10 +122,13 @@ const Videoform = () => {
                 </div>
 
               </div>
+
+                  <p className="text-2xl font-bold text-center"> Download not available for this. But DevTimmy is going to get your message</p>
+
               
               <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
                 <button className="bg-[#6A80B9] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/GiftDev')}> Return to Previous Page</button>
-                <button className="bg-[#27548A] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Spinintro')}>Proceed to Present Your gift</button>
+                <button className="bg-[#27548A] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Spinintro')}>Pick a Gift For Yourself</button>
               </div>
               
           </div>

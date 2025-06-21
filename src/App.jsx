@@ -15,7 +15,7 @@ import Message from './Form/Message'
 import Videoform from './Form/Videoform'
 import Throwback from './Form/Throwback'
 import Admin from './Admin/Admin'
-import Unused from './Admin/Unused'
+import Download from './Admin/Download'
 import Cake from './Gifts/Cake'
 import Candle from './Gifts/Candle'
 import Confetti from './Gifts/Confetti'
@@ -54,7 +54,7 @@ const App = () => {
           <Route path='/Form/Message' element={<Message />} />
           <Route path='/Form/Throwback' element={<Throwback />} />
           <Route path='/Admin/Admin' element={<Admin />} />
-          <Route path='/Admin/Unused' element={<Unused />} />
+          <Route path='/Admin/Download' element={<Download />} />
           <Route path='/Gifts/Cake' element={<Cake />} />
           <Route path='/Gifts/Candle' element={<Candle />} />
           <Route path='/Gifts/Cake' element={<Cake />} />

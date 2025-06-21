@@ -1,10 +1,12 @@
-    import React, { useState, useEffect } from 'react'
-    import { supabase } from '../supabaseClient'
-    import html2canvas from 'html2canvas'
+import React, { useState, useEffect } from 'react'
+import { supabase } from '../supabaseClient'
+import html2canvas from 'html2canvas'
+import {useNavigate} from 'react-router-dom'    
 
 
     const Admin = () => {
 
+        const navigate = useNavigate()
         const [gifts, setGifts] = useState([])
         const [loading, setLoading] = useState(true)
 
@@ -129,8 +131,10 @@
     return (
         <div className="p-8">
             <h1 className = "text-3xl font-bold text-center mb-8">
-                Throwback Gifts for DevTimmy
+                Messages and Throwback page
             </h1>
+
+            <p className="text-1xl font-bold text-center mb-8"> After Downloading your Message Pick a Gift for Yourself At the bottom of the page. </p>
         
             {gifts.length === 0 ? (
                 <p className="text-center, text-gray-500"> No throwback gifts yet!</p>
@@ -158,7 +162,7 @@
                                 </p>
 
                                 <p className="text-sm text-white-500 pt-8">
-                                    #Virtu_Festiva
+                                    #Virtual_Festivity_25
                                 </p>
 
                               <button
@@ -170,7 +174,10 @@
                             </div>
                         ))}
                     </div>
+
+
             )}
+            <button className="bg-[#27548A] py-4 px-8 mt-24 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('../Spinintro')}>Pick a gift for yourself</button>
         </div>
     )
     }

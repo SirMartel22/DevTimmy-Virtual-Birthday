@@ -12,6 +12,7 @@ const Pass = () => {
     "gideon": "Welcome O.G.A Baba 🙌🏽",
     "adeleke": "Respect!!! Sir Adeleke 👑",
     "ireoluwa": "Deaconess!!! 🙌🏽😂😂😂 ",
+    "Feranmi": "CEO, The surprise lounge, Appreciate you for showing up. Come Finish your website fah🙌🏽😂😂😂",
     "ire": "Deaconess!!! 🙌🏽😂😂😂 ",
     "pope": "Pope Olowo, Alhaji Oni gold ni Texas 🙌🏽😂😂😂, Thanks so much for being here Sir",
     "eazy": "#Do_Real_Thing, Welcome Boss😂",
@@ -21,7 +22,6 @@ const Pass = () => {
     "Esther": "Troublesome fellow 😂😂😂. Anyways, I so much appreciate you for showing up. Gbayi",
     "Zachaeus": "Professional Graphic Designer. Thanks so much for showing up!!!🙌🏽😂😂😂",
     "Stephen": "This man can whine for Africa. I appreciate you for showing up🙌🏽😂😂😂",
-    "Feranmi": "CEO, The surprise lounge, Appreciate you for showing up. Come Finish your website fah🙌🏽😂😂😂",
   }
 
   const handleSubmit = (e) => {
@@ -36,7 +36,7 @@ const Pass = () => {
       alert("input field can't be empty")
       return
     } else {
-      alert(`Hi ${name}Hope you have fun in this Party! Welcome!!!`)
+      alert(`Hi ${name}🤭 Hope you have fun in this Party! Welcome!!!`)
     }
 
     navigate('/Video')
@@ -49,7 +49,7 @@ const Pass = () => {
 
         <div className ="description flex flex-col lg:flex md:flex space-y-4">
           <h2 className="font-bold text-2xl lg:text-3xl md:text-3xl">Kindly Provide Your Pass</h2>
-          <span className="font-bold">Click Continue to Venue after filling in the form</span> 
+          {/* <span className="font-bold">Click Continue to Venue after filling in the form</span>  */}
           <p> Please give my bouncer a gate pass so he doesn’t start flexing unnecessary power.</p>
           <span className="text-5xl">😂</span>
         </div>
@@ -77,7 +77,7 @@ const Pass = () => {
                             
                   </div>
               
-            <button type="submit" className="bg-[#6A80B9] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"> Submit </button>
+            <button type="submit" className="bg-[#6A80B9] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"> Check in </button>
 
         </form>
         
