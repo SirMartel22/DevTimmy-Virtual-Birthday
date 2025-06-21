@@ -1,8 +1,6 @@
 import React from 'react'
 import thank from './assets/thanks.jpg'
 
-
-
 const Thanks = () => {
 
   return (
