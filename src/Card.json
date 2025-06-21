@@ -2,21 +2,21 @@
     "Card":[
         {
             "name": "SUGAR CUBE",
-            "description": "Write a Happy Birthday Message to DevTimmy"
+            "description": "Write a Happy Birthday Message to the DevTimmy"
         },
 
         {
-            "name": "Audio",          
+            "name": "AUDIO",          
              "description": "Sing or Drop a song for DevTimmy"
         },
         
         {
             "name": "VIDEO",
-            "description": "Drop a drop a video of devTimmy"
+            "description": "Drop a drop a video of DevTimmy"
         },
         {
             "name": "PICTURE",
-            "description": "Drop a Thowback Picture of The Host"
+            "description": "Drop a Thowback Picture of DevTimmy"
         }
 
     ],

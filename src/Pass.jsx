@@ -9,19 +9,24 @@ const Pass = () => {
 
   const [name, setName] = useState('');
   const potentialNames = {
-    "gideon": "Welcome O.G.A Baba 🙌🏽",
+    "gideon": "APOSTLE O.G.A More Anointing sir 🙌🏽😂😂😂",
+    "adeyele": "APOSTLE O.G.A More Anointing sir 🙌🏽😂😂😂",
+    "ojuewe": "APOSTLE O.G.A More Anointing sir 🙌🏽😂😂😂",
+    "yele": "APOSTLE O.G.A More Anointing sir 🙌🏽😂😂😂",
     "adeleke": "Respect!!! Sir Adeleke 👑",
-    "ireoluwa": "Deaconess!!! 🙌🏽😂😂😂 ",
-    "Feranmi": "CEO, The surprise lounge, Appreciate you for showing up. Come Finish your website fah🙌🏽😂😂😂",
-    "ire": "Deaconess!!! 🙌🏽😂😂😂 ",
+    "ireoluwa": "DEACONESS!!! 🙌🏽😂😂😂 ",
+    "ire": "DEACONESS!!! 🙌🏽😂😂😂 ",
     "pope": "Pope Olowo, Alhaji Oni gold ni Texas 🙌🏽😂😂😂, Thanks so much for being here Sir",
     "eazy": "#Do_Real_Thing, Welcome Boss😂",
     "esee": "My exceutive Producer😂",
-    "Olaronke": "Eola Boss, Welcome ma😂",
-    "Ronke": "Eola Boss, Welcome ma😂",
-    "Esther": "Troublesome fellow 😂😂😂. Anyways, I so much appreciate you for showing up. Gbayi",
-    "Zachaeus": "Professional Graphic Designer. Thanks so much for showing up!!!🙌🏽😂😂😂",
-    "Stephen": "This man can whine for Africa. I appreciate you for showing up🙌🏽😂😂😂",
+    "olaronke": "Eola Boss, Welcome ma😂",
+    "ronke": "Eola Boss, Welcome ma😂",
+    "feranmi": "CEO, The surprise lounge, Appreciate you for showing up. Let's finish our Project fah🙌🏽😂😂😂",
+    "oluwaferanmi": "CEO, The surprise lounge, Appreciate you for showing up. Let's finish our Project fah🙌🏽😂😂😂",
+    "esther": "Troublesome fellow 😂😂😂. Anyways, I so much appreciate you for showing up. Gbayi",
+    "zachaeus": "Professional Graphic Designer. Thanks so much for showing up. Thanks for the whining too!!!🙌🏽😂😂😂",
+    "zacheaus": "Professional Graphic Designer. Thanks so much for showing up. Thanks for the whining too!!!🙌🏽😂😂😂",
+    "stephen": "This man can whine for Africa. I appreciate you for showing up🙌🏽😂😂😂",
   }
 
   const handleSubmit = (e) => {
