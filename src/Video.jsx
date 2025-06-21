@@ -6,14 +6,14 @@ const Video = () => {
   return (
       <div>
           
-        <div className="celebrant-Video flex flex-col items-center justify-center">
+        <div className="celebrant-Video flex flex-col items-center justify-center gap-12">
               
-          <h2 className="text-3xl text-center">Hi Guys! Listen to DevTimmy Talk 🤭 </h2>
+          <h2 className="text-3xl text-center">Here’s Why We’re All Here ☀️🎉🎂🥳</h2>
 
           <div>
-              <video autoPlay className="">
-                <source src="" />
-                Your Browser does not support the video tag
+              <video autoPlay controls className="lg:w-[405px] lg:h-[600px] md:w-[360px] lg:h-[640] md:h-96 mx-auto rounded-md">
+                <source src="https://res.cloudinary.com/djhfy0pr4/video/upload/v1750385637/Virtue_Festiva_gpvalz.mp4" type="video/mp4"/>
+              
               </video>
             
           </div>

@@ -83,7 +83,7 @@ const Giftbox = () => {
               tweenDuration = {1000}
           />
           
-          <h2 className="font-bold text-2xl text-center py-8"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
+          <h2 className="font-bold text-2xl text-center py-8"> Congratulations!!! You won this Gift at This Virtu Festiva Party, Enjoy</h2>
           <h4> You can download it and post on your status as an evidence that you showed up</h4>
         
     {/* <!-- Content area --> */}
@@ -134,7 +134,7 @@ const Giftbox = () => {
                     </div>
 
                   <p class="text-gray-600 mb-4 font-bold"> GiftBox Mogul </p>
-                  <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
+                  <p class="text-gray-600 mb-8 font-bold">  #Virtual_Festivity_25 </p>
                  
             
             {/* <!-- Buttons --> */}

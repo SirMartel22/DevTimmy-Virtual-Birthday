@@ -82,8 +82,8 @@ const Meme = () => {
                   tweenDuration = {1000}
               />
               
-              <h2 className="font-bold text-2xl py-8"> Congratulations!!! You won this Gift at DevTimmy's Birthday Party, Enjoy</h2>
-              <h4> You can download it and post on your status as an evidence that you showed up</h4>
+              <h2 className="font-bold text-2xl py-8"> Congratulations!!! You won this Gift at This Virtu Festiva Party, Enjoy</h2>
+          <h4> You can download it and post on your status as an evidence that you showed up</h4>
             
         {/* <!-- Content area --> */}
         <div class="relative z-10 min-h-screen flex items-center justify-center p-8 items-center pb-12">
@@ -134,7 +134,7 @@ const Meme = () => {
                             
                 
                       <p class="text-gray-600 mb-4 font-bold">Viral Energy Ambassador </p>
-                      <p class="text-gray-600 mb-8 font-bold">  #Virtual_Birtday_Party </p>
+                      <p class="text-gray-600 mb-8 font-bold">   #Virtual_Festivity_25 </p>
                      
                 
                 {/* <!-- Buttons --> */}
