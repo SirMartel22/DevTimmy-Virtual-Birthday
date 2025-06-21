@@ -103,7 +103,7 @@ export default function CountdownTimer() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900  to-slate-900 flex items-center justify-center p-4">
       <div className="max-w-4xl w-full text-center">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center leading-[1.5em] pb-8">Welcome to Official Virtu Festiva Event Website</h2>
+          <h2 className="text-3xl font-bold text-center leading-[1.5em] pb-8">Welcome to Official VIRTU FESTIVA Event Website</h2>
            <h3>The Event go <span className="bg-red-900 py-1 px-1 rounded-md font-bold">Live</span> by 1am, 22nd of June, 2025. </h3>
             
         </div>
