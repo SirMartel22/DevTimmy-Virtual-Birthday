@@ -1,7 +1,7 @@
 {
     "Card":[
         {
-            "name": "Birthday Sugar Cube",
+            "name": "SUGAR CUBE",
             "description": "Write a Happy Birthday Message to DevTimmy"
         },
 
@@ -11,12 +11,12 @@
         },
         
         {
-            "name": "Video",
+            "name": "VIDEO",
             "description": "Drop a drop a video of devTimmy"
         },
         {
-            "name": "Picture",
-            "description": "Drop a ThowbackPicture of Devtimmy"
+            "name": "PICTURE",
+            "description": "Drop a Thowback Picture of The Host"
         }
 
     ],
