@@ -79,7 +79,7 @@ const Audio = () => {
           <div className="audioform flex flex-col justify-center items-center space-y-24">
               
               <div className="audio-form-header">
-                <h2 className="audiohead text-3xl"> You probably Choose to send DevTimmy an Audio Message</h2>
+                  <h2 className="audiohead text-3xl"> Send Audio Message to DevTimmy </h2>
               </div>
 
               <div className="displayCard-Form flex flex-col lg:flex lg:flex-row md:flex md:flex-col justify-center items-center space-x-12">
@@ -127,10 +127,12 @@ const Audio = () => {
                 </div>
 
               </div>
-              
+
+            <p className="font-bold text-center"> Download Not Available for this, But DevTimmy is going to get your message</p>
+
                <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
                 <button className="bg-[#6A80B9] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/GiftDev')}> Return to Previous Page</button>
-                <button className="bg-[#27548A]  py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Spinintro')}>Pick a gift for yourself</button>
+                <button className="bg-[#27548A]  py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300"  onClick={()=>navigate('/Spinintro')}>Pick a Gift for Yourself </button>
               </div>
         
               
