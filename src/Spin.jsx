@@ -92,7 +92,7 @@ class Spin extends React.Component {
           color: "#f5f5f5",
           marginBottom: "50px",
         }}>
-          Spin and get a package for attending DevTimmy's Birthday Party
+          Spin and get a package for attending This Virtual Event
         </h2>
 
         <div style={{

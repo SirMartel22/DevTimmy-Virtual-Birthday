@@ -8,9 +8,9 @@ const Thanks = () => {
   return (
     <div>
       
-      <div className="flex flex-col items-center justify-center gap-16 text-center">
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
 
-        <div className="w-60 h-60 text-orange-600 mx-auto mt-16">
+        <div className="w-60 h-60 text-orange-600 mx-auto mt-4">
           <img className="rounded-md w-60 h-60 lg:w-60 lg:h-60 hover:scale-105 transform transition duration-500" src={thank} />
         </div>
 
@@ -19,7 +19,7 @@ const Thanks = () => {
         </h2> 
         
         <h2>
-          Thank you so much for joining DevTimmy’s Virtual Birthday Party. Really glad you made it here today
+          Thank you so much for attending Virtu Festiva. Really glad you made it here today
         </h2>
 
         <h2>
