@@ -32,13 +32,13 @@ const Giftdev = () => {
         </div>
 
         <div className="card-section-2 flex flex-col md:flex-row gap-8" >
-            <div className="video-card bg-[#4E6688] py-12 px-8  lg:w-[400px] rounded-md cursor-pointer transform hover:scale-105 transition duration-300" onClick={()=>navigate('/Form/Videoform')}>
+            <div className="video-card bg-[#4E6688] py-12 px-8   font-bold lg:w-[400px] rounded-md cursor-pointer transform hover:scale-105 transition duration-300" onClick={()=>navigate('/Form/Videoform')}>
                 {/* <h1 className="text-2xl text-red font-bold"> This Feature is not available at the moment </h1>  */}
                 <h3>{Card[2].name}</h3>
                 <p>{ Card[2].description }</p>
             </div>
 
-          <div className="audio-card bg-[#4E6688] py-12 px-8  lg:w-[400px] rounded-md cursor-pointer transform hover:scale-105 transition duration-300" onClick={()=>navigate('/Form/Audio')}>
+          <div className="audio-card bg-[#4E6688] py-12 px-8  font-bold  lg:w-[400px] rounded-md cursor-pointer transform hover:scale-105 transition duration-300" onClick={()=>navigate('/Form/Audio')}>
             <h3>{Card[1].name}</h3>
             <p>{ Card[1].description }</p>
                 
