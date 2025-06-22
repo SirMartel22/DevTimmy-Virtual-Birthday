@@ -39,9 +39,9 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Coming/>} />
-          {/* <Route index element={<Welcome/>} /> */}
-          <Route path='/Coming' element={<Coming />} />
+          {/* <Route index element={<Coming/>} /> */}
+          <Route index element={<Welcome/>} />
+          {/* <Route path='/Coming' element={<Coming />} /> */}
           <Route path='/Welcome' element={<Welcome />} />
           <Route path='/Giftdev' element={<Giftdev />} />
           <Route path='/Pass' element={<Pass />} />
