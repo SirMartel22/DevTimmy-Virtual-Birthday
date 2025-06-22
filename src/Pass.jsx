@@ -27,6 +27,7 @@ const Pass = () => {
     "zachaeus": "Professional Graphic Designer. Thanks so much for showing up. Thanks for the whining too!!!🙌🏽😂😂😂",
     "zacheaus": "Professional Graphic Designer. Thanks so much for showing up. Thanks for the whining too!!!🙌🏽😂😂😂",
     "stephen": "This man can whine for Africa. I appreciate you for showing up🙌🏽😂😂😂",
+    "folashade": "Folashade, Faderera, Thanks for showing up ma🙌🏽😂😂😂",
   }
 
   const handleSubmit = (e) => {
