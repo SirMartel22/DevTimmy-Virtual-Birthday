@@ -2,7 +2,7 @@
 import React from 'react'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Coming from './Coming'
+// import Coming from './Coming'
 import Welcome from './Welcome'
 import Giftdev from './Giftdev'
 import Spin from './Spin'
