@@ -136,7 +136,7 @@ const Throwback = () => {
 
           </div>
 
-          <p className="font-bold text-center"> Click on Go to Download Page 🚀 to grab the throwback you sent ✨. Like what you see? Share the vibe on your status 🥳📱!</p>
+          <p className="font-bold text-center"> Click on Go to Download Page 🚀 to grab the throwback you sent ✨. if you like what you see? download and share on your whatsApp Status 🥳📱!</p>
 
            <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
               <button className="bg-[#6A80B9] py-4 px-8 rounded-md shadow-div-shadow transform hover:scale-105 hover:bg-[#332D56] transition duration-300" onClick ={()=>navigate('/GiftDev')}> Return to Previous Page</button>

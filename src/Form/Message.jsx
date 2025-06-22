@@ -133,7 +133,7 @@ const Message = () => {
             </div>
         </div>
 
-          <p className="font-bold text-center"> Click on Go to Download Page 🚀 to grab the message you sent ✨. Like what you see? Share the vibe on your status 🥳📱!</p>
+          <p className="font-bold text-center"> Click on Go to Download Page 🚀 to grab the message you sent ✨. if you like what you see? download and share the vibe on your WhatsApp status 🥳📱!</p>
         
 
               <div className="next-prev-btn flex flex-col lg:flex lg:flex-row items-center justify-center space-y-16 lg:space-x-24 lg:space-y-0">
